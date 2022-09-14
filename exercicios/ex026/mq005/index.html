@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
+
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -23,12 +27,35 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat temporibus nam, facilis quos, voluptatibus dolore voluptatum error nihil, commodi voluptate quidem a. Deserunt nam aliquam eum, minus consectetur placeat atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit, voluptatum quod architecto voluptates expedita excepturi libero, nam culpa itaque ut iure! Eligendi architecto, placeat dolore officiis magnam asperiores necessitatibus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat temporibus nam, facilis quos,
+                voluptatibus dolore voluptatum error nihil, commodi voluptate quidem a. Deserunt nam aliquam eum, minus
+                consectetur placeat atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit,
+                voluptatum quod architecto voluptates expedita excepturi libero, nam culpa itaque ut iure! Eligendi
+                architecto, placeat dolore officiis magnam asperiores necessitatibus.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus aperiam error? Et distinctio pariatur iure exercitationem aliquid modi similique dignissimos veritatis suscipit dolore velit laudantium, eveniet repellat odio temporibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nulla officiis consequuntur harum ipsum ipsa voluptatem, pariatur explicabo possimus at quod iste mollitia qui dolores, cumque animi cupiditate necessitatibus aliquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus aperiam error? Et distinctio
+                pariatur iure exercitationem aliquid modi similique dignissimos veritatis suscipit dolore velit
+                laudantium, eveniet repellat odio temporibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum nulla officiis consequuntur harum ipsum ipsa voluptatem, pariatur explicabo possimus at quod
+                iste mollitia qui dolores, cumque animi cupiditate necessitatibus aliquam.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio earum ipsum officia excepturi autem, laboriosam obcaecati harum laborum nihil? Corporis possimus ut veritatis aperiam quos repudiandae voluptatem ab dolor dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum placeat dicta quas accusantium exercitationem, reiciendis aspernatur adipisci eos at sunt magni esse minima quod quasi. Ratione dolore perspiciatis facere illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, quo vel, rerum optio doloribus dolores distinctio enim dolorum quasi nemo corporis tempore voluptatibus unde error eum non voluptas aliquid dicta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio earum ipsum officia excepturi autem,
+                laboriosam obcaecati harum laborum nihil? Corporis possimus ut veritatis aperiam quos repudiandae
+                voluptatem ab dolor dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum placeat
+                dicta quas accusantium exercitationem, reiciendis aspernatur adipisci eos at sunt magni esse minima quod
+                quasi. Ratione dolore perspiciatis facere illo. Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Excepturi, quo vel, rerum optio doloribus dolores distinctio enim dolorum quasi nemo corporis
+                tempore voluptatibus unde error eum non voluptas aliquid dicta.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+                if (itens.style.display == "block") {
+                    itens.style.display = "none"
+                } else {
+                        itens.style.display = "block"
+                }
+        }
+    </script>
 </body>
 </html>
